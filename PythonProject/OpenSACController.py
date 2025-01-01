@@ -8,16 +8,15 @@ def logar_sac(pid, login, senha):
         janela = sac.top_window()
         janela.wait('visible')
 
-        campo_login = janela.child_window(title="Login:", control_type="Edit")
-        campo_login.click_input(double=True)
+        campo_login = janela.child_window(title="Usuário:", control_type="Edit").type_keys(login)
+        #campo_login.click_input(double=True)
 
-        campo_login.set_text(login)
+        #campo_login.set_text(login)
 
-        campo_senha = janela.child_window(title="Senha:", control_type="Edit")
-        campo_senha.click_input(double=True)
+        campo_senha = janela.child_window(title="Senha:", control_type="Edit").type_keys(senha)
+        #campo_senha.click_input(double=True)
 
-
-        campo_senha.set_text(senha)
+        #campo_senha.set_text(senha)
 
         campo_senha.type_keys("{ENTER}")
 
