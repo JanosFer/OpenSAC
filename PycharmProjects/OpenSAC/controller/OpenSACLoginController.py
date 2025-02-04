@@ -212,7 +212,7 @@ class OpenSacController:
         campos[1].set_text(data)  # Segundo campo de data
 
         # Clica no botão "Nenhum"
-        botao_desmarcar = janela.child_window(title="Nenhum", control_type="Button")
+        botao_desmarcar = janela.child_window(title="Nenhum", control_type="Button", found_index=1)
         botao_desmarcar.invoke()
 
         # Marca as checkboxes da rotina de NetReport
