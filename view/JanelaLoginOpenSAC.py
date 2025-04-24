@@ -167,8 +167,6 @@ class JanelaLogin(QWidget):
             controller = OpenSacController()
             if controller.validar_login(usuario, senha):
                 self.abrir_janela_escolha_instancias(controller)
-            else:
-                QMessageBox.warning(self, "Erro", "Login inválido")
         except Exception as e:
             QMessageBox.critical(self, "Erro Interno", str(e))
 
